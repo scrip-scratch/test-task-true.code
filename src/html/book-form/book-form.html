@@ -1,0 +1,54 @@
+<div class="book-form__wrap book-form__wrap_hidden">
+  <div class="container">
+    <!-- Book-Form Heading -->
+    <div class="book-form__heading">
+      <h2>
+        Бронирование<br />
+        билетов
+      </h2>
+      <!-- Book-Form Close Button -->
+      <div class="book-form__close"></div>
+    </div>
+    <!-- Book-Form Form -->
+    <form action="#" class="book-form__form">
+      <!-- Book-Form Form Input -->
+      <p>
+        <label for="date-in">Дата заезда</label>
+        <input
+          type="date"
+          name="date-in"
+          id="date-in"
+          placeholder="дд.мм.гггг"
+          onchange="this.className=(this.value!=''?'has-value':'')"
+          required
+        />
+      </p>
+      <!-- Book-Form Form Input -->
+      <p>
+        <label for="date-out">Дата выезда</label>
+        <input
+          type="date"
+          name="date-out"
+          id="date-out"
+          placeholder="дд.мм.гггг"
+          onchange="this.className=(this.value!=''?'has-value':'')"
+          required
+        />
+      </p>
+      <!-- Book-Form Form Input -->
+      <p>
+        <label for="tickets-amount">Количество</label>
+        <input
+          type="text"
+          name="tickets-amount"
+          id="tickets-amount"
+          placeholder="1 человек"
+          autocomplete="off"
+          required
+        />
+      </p>
+      <!-- Book-Form Form Submit -->
+      <input class="book-form_btn" type="submit" value="Купить билеты" />
+    </form>
+  </div>
+</div>

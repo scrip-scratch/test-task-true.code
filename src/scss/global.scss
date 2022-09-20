@@ -1,0 +1,59 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap";
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/Bebas-Neue.ttf") format("truetype");
+}
+
+$font-main: "Montserrat";
+$font-logo: "Bebas Neue";
+
+$color-light: #f2e1c2;
+$color-dark: #262526;
+$color-accent: #f23207;
+$color-white: #d9d9d9;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+@mixin btn($bg, $txt, $hvr_bg, $hvr_txt) {
+  padding: 0.625rem 0.938rem;
+  border: none;
+  background-color: $bg;
+  color: $txt;
+  font-size: 1rem;
+  font-family: $font-main;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: all 0.2s;
+  cursor: pointer;
+  @media (min-width: 960px) {
+    &:hover {
+      background-color: $hvr_bg;
+      color: $hvr_txt;
+    }
+  }
+  &:active {
+    transform: scale(0.95);
+    background-color: $hvr_bg;
+    color: $hvr_txt;
+  }
+}

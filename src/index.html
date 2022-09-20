@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./html/head.html', { "title": "Билеты на Марс" })
+  <body class="preload">
+    <div class="loader-screen">
+      <img
+        width="150"
+        height="150"
+        src="https://steemitimages.com/DQmdR1i8fQkgzURbny8qD6M5mcDT88iPYWVUUNDXSNLdAcY/rocket.gif"
+        alt=""
+      />
+    </div>
+    <div class="space"></div>
+    <div class="smoke"></div>
+    <div class="container">
+      <!-- Header -->
+      @@include('./html/header/header.html', {})
+      <!-- Main -->
+      <main class="main">
+        @@include('./html/banner-mars/banner-mars.html', {})
+      </main>
+      <!-- Booking Form -->
+      @@include('./html/book-form/book-form.html', {})
+    </div>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

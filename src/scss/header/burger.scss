@@ -1,0 +1,30 @@
+.header__burger {
+  display: none;
+  width: 3rem;
+  @media (max-width: 1080px) {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    div {
+      width: 100%;
+      height: 4px;
+      border-radius: 5px;
+      background-color: $color-light;
+      opacity: 1;
+      transition: all 0.2s;
+    }
+  }
+}
+.header__burger_active {
+  div {
+    &:nth-child(1) {
+      transform: rotate(45deg) translate(10px, 10px);
+    }
+    &:nth-child(2) {
+      opacity: 0;
+    }
+    &:nth-child(3) {
+      transform: rotate(-45deg) translate(10px, -10px);
+    }
+  }
+}
