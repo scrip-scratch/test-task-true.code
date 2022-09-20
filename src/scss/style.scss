@@ -29,6 +29,9 @@ body {
   @media (max-height: 960px) {
     margin: 10vh 0;
   }
+  @media (max-height: 560px) {
+    margin: 15vh 0;
+  }
 }
 
 @import "./loader-screen";

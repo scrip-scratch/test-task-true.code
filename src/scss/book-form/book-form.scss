@@ -107,6 +107,7 @@
         border: none;
         border-bottom: 2px solid $color-dark;
         outline: none;
+        text-align: left;
       }
       input[type="date"] {
         position: relative;
@@ -132,10 +133,6 @@
       input[type="date"]:placeholder {
         z-index: 99;
       }
-      // input[type="date"]:not(.has-value):before {
-      //   content: attr(placeholder);
-      //   width: 100%;
-      // }
     }
     input[type="submit"] {
       @include btn($color-dark, $color-light, $color-accent, $color-light);
