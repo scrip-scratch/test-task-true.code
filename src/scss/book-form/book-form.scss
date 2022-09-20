@@ -108,16 +108,10 @@
         border-bottom: 2px solid $color-dark;
         outline: none;
         text-align: left;
+        -webkit-appearance: none;
       }
       input[type="date"] {
         position: relative;
-      }
-      input[type="date"]::-webkit-inner-spin-button,
-      input[type="date"]::-webkit-clear-button {
-        z-index: -10;
-      }
-      input[type="date"]::-webkit-input-placeholder {
-        z-index: 99;
       }
       input[type="date"]::-webkit-calendar-picker-indicator {
         position: absolute;
@@ -130,13 +124,11 @@
         color: transparent;
         background: transparent;
       }
-      input[type="date"]:placeholder {
-        z-index: 99;
-      }
     }
     input[type="submit"] {
       @include btn($color-dark, $color-light, $color-accent, $color-light);
       grid-column: 3/4;
+      -webkit-appearance: none;
       @media (max-width: 680px) {
         grid-column: 1/1;
       }
